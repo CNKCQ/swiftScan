@@ -58,7 +58,6 @@ open class LBXScanView: UIView
             scanLineStill?.image = viewStyle.animationImage
             break
             
-            
         default:
             break
         }
@@ -139,7 +138,6 @@ open class LBXScanView: UIView
             
             self.addSubview(scanLineStill!)
             self.scanLineStill?.isHidden = false
-            
             break
             
         default: break
@@ -166,7 +164,6 @@ open class LBXScanView: UIView
             break
         case LBXScanViewAnimationStyle.LineStill:
              self.scanLineStill?.isHidden = true
-            
             break
             
         default: break

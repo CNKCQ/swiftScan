@@ -187,7 +187,7 @@ open class LBXScanViewController: UIViewController, UIImagePickerControllerDeleg
         showMsg(title: "", message: "识别失败")
     }
     
-    func showMsg(title:String?,message:String?)
+    open func showMsg(title:String?,message:String?)
     {
         if LBXScanWrapper.isSysIos8Later()
         {

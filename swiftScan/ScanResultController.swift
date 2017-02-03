@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import swiftScan
 
 class ScanResultController: UIViewController {
 

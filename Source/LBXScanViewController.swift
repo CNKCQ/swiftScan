@@ -10,7 +10,7 @@ import UIKit
 import Foundation
 import AVFoundation
 
-protocol LBXScanViewControllerDelegate : class {
+public protocol LBXScanViewControllerDelegate : class {
     func didGetResult(type:String?, message:String?)
 }
 
@@ -31,7 +31,7 @@ open class LBXScanViewController: UIViewController, UIImagePickerControllerDeleg
     //是否需要识别后的当前图像
     var isNeedCodeImage = false
     
-    weak var delegate:LBXScanViewControllerDelegate?
+    open weak var delegate:LBXScanViewControllerDelegate?
 
     override open func viewDidLoad() {
         super.viewDidLoad()

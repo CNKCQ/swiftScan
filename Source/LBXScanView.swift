@@ -47,13 +47,13 @@ open class LBXScanView: UIView
         
         switch (viewStyle.anmiationStyle)
         {
-        case LBXScanViewAnimationStyle.LineMove:
+        case LBXScanViewAnimationStyle.lineMove:
             scanLineAnimation = LBXScanLineAnimation.instance()
             break
-        case LBXScanViewAnimationStyle.NetGrid:
+        case LBXScanViewAnimationStyle.netGrid:
             scanNetAnimation = LBXScanNetAnimation.instance()
             break
-        case LBXScanViewAnimationStyle.LineStill:
+        case LBXScanViewAnimationStyle.lineStill:
             scanLineStill = UIImageView()
             scanLineStill?.image = viewStyle.animationImage
             break
@@ -118,17 +118,17 @@ open class LBXScanView: UIView
         
         switch viewStyle.anmiationStyle
         {
-        case LBXScanViewAnimationStyle.LineMove:
+        case LBXScanViewAnimationStyle.lineMove:
             
             print(NSStringFromCGRect(cropRect))
             
             scanLineAnimation!.startAnimatingWithRect(animationRect: cropRect, parentView: self, image:viewStyle.animationImage )
             break
-        case LBXScanViewAnimationStyle.NetGrid:
+        case LBXScanViewAnimationStyle.netGrid:
             
             scanNetAnimation!.startAnimatingWithRect(animationRect: cropRect, parentView: self, image:viewStyle.animationImage )
             break
-        case LBXScanViewAnimationStyle.LineStill:
+        case LBXScanViewAnimationStyle.lineStill:
             
             let stillRect = CGRect(x: cropRect.origin.x+20,
                                    y: cropRect.origin.y + cropRect.size.height/2,
@@ -154,15 +154,15 @@ open class LBXScanView: UIView
         
         switch viewStyle.anmiationStyle
         {
-        case LBXScanViewAnimationStyle.LineMove:
+        case LBXScanViewAnimationStyle.lineMove:
             
             scanLineAnimation?.stopStepAnimating()
             break
-        case LBXScanViewAnimationStyle.NetGrid:
+        case LBXScanViewAnimationStyle.netGrid:
             
             scanNetAnimation?.stopStepAnimating()
             break
-        case LBXScanViewAnimationStyle.LineStill:
+        case LBXScanViewAnimationStyle.lineStill:
              self.scanLineStill?.isHidden = true
             break
             
@@ -267,13 +267,13 @@ open class LBXScanView: UIView
         
         switch viewStyle.photoframeAngleStyle
         {
-        case LBXScanViewPhotoframeAngleStyle.Outer:
+        case LBXScanViewPhotoframeAngleStyle.outer:
                 diffAngle = linewidthAngle/3//框外面4个角，与框紧密联系在一起
            
-        case LBXScanViewPhotoframeAngleStyle.On:
+        case LBXScanViewPhotoframeAngleStyle.on:
                 diffAngle = 0
             
-        case LBXScanViewPhotoframeAngleStyle.Inner:
+        case LBXScanViewPhotoframeAngleStyle.inner:
                 diffAngle = -viewStyle.photoframeLineW/2
         }
         

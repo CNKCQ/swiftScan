@@ -61,7 +61,7 @@ class QQScanViewController: LBXScanViewController {
         
         for result:LBXScanResult in arrayResult
         {
-            print("%@",result.strScanned)
+            print("\(result.strScanned)")
         }
         
         let result:LBXScanResult = arrayResult[0]

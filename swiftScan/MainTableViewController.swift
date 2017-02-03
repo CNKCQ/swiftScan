@@ -108,14 +108,14 @@ class MainTableViewController: UITableViewController,UIImagePickerControllerDele
         style.alpa_notRecoginitonArea = 0.4
         
         
-        style.photoframeAngleStyle = LBXScanViewPhotoframeAngleStyle.Inner;
+        style.photoframeAngleStyle = LBXScanViewPhotoframeAngleStyle.inner;
         style.photoframeLineW = 2.0;
         style.photoframeAngleW = 16;
         style.photoframeAngleH = 16;
         
         style.isNeedShowRetangle = false;
         
-        style.anmiationStyle = LBXScanViewAnimationStyle.NetGrid;
+        style.anmiationStyle = LBXScanViewAnimationStyle.netGrid;
         style.animationImage = UIImage(named: "CodeScan.bundle/qrcode_scan_full_net")
         
         
@@ -148,13 +148,13 @@ class MainTableViewController: UITableViewController,UIImagePickerControllerDele
         var style = LBXScanViewStyle()
         
         style.centerUpOffset = 44;
-        style.photoframeAngleStyle = LBXScanViewPhotoframeAngleStyle.Inner;
+        style.photoframeAngleStyle = LBXScanViewPhotoframeAngleStyle.inner;
         style.photoframeLineW = 4;
         style.photoframeAngleW = 28;
         style.photoframeAngleH = 16;
         style.isNeedShowRetangle = false;
         
-        style.anmiationStyle = LBXScanViewAnimationStyle.LineStill;
+        style.anmiationStyle = LBXScanViewAnimationStyle.lineStill;
         
         
         style.animationImage = createImageWithColor(color: UIColor.red)
@@ -179,13 +179,13 @@ class MainTableViewController: UITableViewController,UIImagePickerControllerDele
         //设置扫码区域参数
         var style = LBXScanViewStyle()
         style.centerUpOffset = 44;
-        style.photoframeAngleStyle = LBXScanViewPhotoframeAngleStyle.Inner;
+        style.photoframeAngleStyle = LBXScanViewPhotoframeAngleStyle.inner;
         style.photoframeLineW = 3;
         style.photoframeAngleW = 18;
         style.photoframeAngleH = 18;
         style.isNeedShowRetangle = false;
         
-        style.anmiationStyle = LBXScanViewAnimationStyle.LineMove;
+        style.anmiationStyle = LBXScanViewAnimationStyle.lineMove;
         
         //qq里面的线条图片
         style.animationImage = UIImage(named: "CodeScan.bundle/qrcode_scan_light_green")
@@ -203,13 +203,13 @@ class MainTableViewController: UITableViewController,UIImagePickerControllerDele
         //设置扫码区域参数
         var style = LBXScanViewStyle()
         style.centerUpOffset = 44;
-        style.photoframeAngleStyle = LBXScanViewPhotoframeAngleStyle.Inner;
+        style.photoframeAngleStyle = LBXScanViewPhotoframeAngleStyle.inner;
         style.photoframeLineW = 2;
         style.photoframeAngleW = 18;
         style.photoframeAngleH = 18;
         style.isNeedShowRetangle = false;
         
-        style.anmiationStyle = LBXScanViewAnimationStyle.LineMove;
+        style.anmiationStyle = LBXScanViewAnimationStyle.lineMove;
         
         style.colorAngle = UIColor(red: 0.0/255, green: 200.0/255.0, blue: 20.0/255.0, alpha: 1.0)
         
@@ -229,13 +229,13 @@ class MainTableViewController: UITableViewController,UIImagePickerControllerDele
         //设置扫码区域参数
         var style = LBXScanViewStyle()
         style.centerUpOffset = 44;
-        style.photoframeAngleStyle = LBXScanViewPhotoframeAngleStyle.On;
+        style.photoframeAngleStyle = LBXScanViewPhotoframeAngleStyle.on;
         style.photoframeLineW = 6;
         style.photoframeAngleW = 24;
         style.photoframeAngleH = 24;
         style.isNeedShowRetangle = true;
         
-        style.anmiationStyle = LBXScanViewAnimationStyle.NetGrid;
+        style.anmiationStyle = LBXScanViewAnimationStyle.netGrid;
         
         
         //矩形框离左边缘及右边缘的距离
@@ -263,13 +263,13 @@ class MainTableViewController: UITableViewController,UIImagePickerControllerDele
         //设置扫码区域参数
         var style = LBXScanViewStyle()
         style.centerUpOffset = 44;
-        style.photoframeAngleStyle = LBXScanViewPhotoframeAngleStyle.On;
+        style.photoframeAngleStyle = LBXScanViewPhotoframeAngleStyle.on;
         style.photoframeLineW = 6;
         style.photoframeAngleW = 24;
         style.photoframeAngleH = 24;
         style.isNeedShowRetangle = true;
         
-        style.anmiationStyle = LBXScanViewAnimationStyle.NetGrid;
+        style.anmiationStyle = LBXScanViewAnimationStyle.netGrid;
         
         
         //使用的支付宝里面网格图片
@@ -289,12 +289,12 @@ class MainTableViewController: UITableViewController,UIImagePickerControllerDele
         //设置扫码区域参数
         var style = LBXScanViewStyle()
         style.centerUpOffset = 44;
-        style.photoframeAngleStyle = LBXScanViewPhotoframeAngleStyle.On;
+        style.photoframeAngleStyle = LBXScanViewPhotoframeAngleStyle.on;
         style.photoframeLineW = 6;
         style.photoframeAngleW = 24;
         style.photoframeAngleH = 24;
         style.isNeedShowRetangle = true;
-        style.anmiationStyle = LBXScanViewAnimationStyle.LineMove;
+        style.anmiationStyle = LBXScanViewAnimationStyle.lineMove;
         
         //使用的支付宝里面网格图片
         style.animationImage = UIImage(named: "CodeScan.bundle/qrcode_scan_light_green");
@@ -332,12 +332,12 @@ class MainTableViewController: UITableViewController,UIImagePickerControllerDele
         style.xScanRetangleOffset = 100;
         
         
-        style.photoframeAngleStyle = LBXScanViewPhotoframeAngleStyle.On;
+        style.photoframeAngleStyle = LBXScanViewPhotoframeAngleStyle.on;
         style.photoframeLineW = 6;
         style.photoframeAngleW = 24;
         style.photoframeAngleH = 24;
         style.isNeedShowRetangle = true;
-        style.anmiationStyle = LBXScanViewAnimationStyle.LineMove;
+        style.anmiationStyle = LBXScanViewAnimationStyle.lineMove;
         
         //qq里面的线条图片
         
@@ -365,7 +365,7 @@ class MainTableViewController: UITableViewController,UIImagePickerControllerDele
     }
     
     //MARK: -----相册选择图片识别二维码 （条形码没有找到系统方法）
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject])
+    private func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject])
     {
         picker.dismiss(animated: true, completion: nil)
         
